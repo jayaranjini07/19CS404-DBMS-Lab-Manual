@@ -48,14 +48,18 @@ Design a database for patient management, appointments, medical records, and bil
 # ER Diagram Submission - Student Name
 
 ## Scenario Chosen:
-University / Hospital (choose one)
+Hospital 
 
 ## ER Diagram:
-![ER Diagram](er_diagram.png)
+![image](https://github.com/user-attachments/assets/e37329bf-0b46-4fc6-917f-01839cb80a21)
 
 ## Entities and Attributes:
-- Entity1: Attributes
-- Entity2: Attributes
+- PATIENT: PatientID, Name, Gender, DOB, Adress, Phone, Insurance details,
+- DOCTOR: DoctorID, Name, Phone, Specialization, Email, Work schedule
+- DEPARTMENT: DeptID, Dept name, Dept head
+- APPOINTMENT: AppointementID, PatientID, DoctorID, Reason to visit, Appointment date & time
+- MEDICAL RECORD: Medical record ID, PatientID, DoctorID, Test result, Treatments, Medications, Diagnoses
+- BILLING: BillID, PatientID, AppointmentID
 ...
 
 ## Relationships and Constraints:
