@@ -76,9 +76,14 @@
  ...
  
  ## Extension (Prerequisite / Billing):
- - Explain how you modeled prerequisites or billing.
+ The **Billing** entity is linked to both **Appointment** and **Patient**. Each appointment generates exactly one bill. The **Payment** entity supports **multiple payments per bill** (e.g., partial payments). This is modeled using a one-to-many relationship between **Billing** and **Payment**. Each payment records method, date, and amount—ensuring accurate tracking of all financial transactions.
  
  ## Design Choices:
- Brief explanation of why you chose certain entities, relationships, and assumptions
+ - Chose **Patient**, **Doctor**, and **Appointment** as core entities reflecting fundamental hospital operations.  
+- Added **Medical Record** as a distinct entity to separate treatment history from visit details.  
+- Modeled **Billing** and **Payment** as independent entities to support flexible financial tracking.  
+- Included **Department** as a structural unit and modeled department head relationships.  
+- Used realistic cardinalities and participation to accurately reflect system requirements.
  
  ## RESULT
+Successfully analyzed a real-world hospital scenario, identified key entities and relationships, and represented them using an ER diagram with clear cardinality and participation constraints. Modeled billing and payment in a detailed and scalable way, demonstrating strong understanding of ER modeling principles.
