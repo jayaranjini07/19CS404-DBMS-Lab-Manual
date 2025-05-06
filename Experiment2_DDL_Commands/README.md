@@ -120,111 +120,188 @@ select * from Discontinued_products;
 
 **Question 2**
 ---
--- Paste Question 2 here
+-- Create a table named Members with the following columns:
+MemberID as INTEGER
+MemberName as TEXT
+JoinDate as DATE
 
 ```sql
--- Paste your SQL code below for Question 2
+-- create table Members(
+MemberID INTEGER,
+MemberName TEXT,
+JoinDate DATE);
 ```
 
 **Output:**
 
-![Output2](output.png)
+![image](https://github.com/user-attachments/assets/e65726c6-57ea-4c6f-b8a2-6f8267297706)
+
 
 **Question 3**
 ---
--- Paste Question 3 here
+-- Create a table named Shipments with the following constraints:
+ShipmentID as INTEGER should be the primary key.
+ShipmentDate as DATE.
+SupplierID as INTEGER should be a foreign key referencing Suppliers(SupplierID).
+OrderID as INTEGER should be a foreign key referencing Orders(OrderID).
 
 ```sql
--- Paste your SQL code below for Question 3
+-- Create table Shipments(
+ShipmentID INTEGER primary key,
+ShipmentDate DATE,
+SupplierID INTEGER,
+OrderID INTEGER,
+foreign key (SupplierID) References Suppliers(SupplierID),
+foreign key (OrderID) references Orders(OrderID));
 ```
 
 **Output:**
 
-![Output3](output.png)
+![image](https://github.com/user-attachments/assets/ea627ae5-c54a-4850-aac0-b483417b98e2)
+
 
 **Question 4**
 ---
--- Paste Question 4 here
+-- Insert the following students into the Student_details table:
+RollNo      Name        Gender      Subject     MARKS
+----------  ----------  ----------  ----------  ----------
+202            Ella King         F           Chemistry   87
+203            James Bond   M          Literature    78
 
 ```sql
--- Paste your SQL code below for Question 4
+-- insert into Student_details(RollNo,Name,Gender,Subject,MARKS)
+values(202,'Ella King','F','Chemistry',87),
+(203,'James Bond','M','Literature',78);
 ```
 
 **Output:**
 
-![Output4](output.png)
+![image](https://github.com/user-attachments/assets/37624fb3-aedb-442f-9809-07b40f7d7642)
+
 
 **Question 5**
 ---
--- Paste Question 5 here
+-- Write a SQL query to Rename the "city" column to "location" in the "customer" table.
+Sample table: customer
+
+ customer_id |   cust_name    |    city    | grade | salesman_id 
+-------------+----------------+------------+-------+-------------
+        3002 | Nick Rimando   | New York   |   100 |        5001
+        3007 | Brad Davis     | New York   |   200 |        5001
+        3005 | Graham Zusi    | California |   200 |        5002
 
 ```sql
--- Paste your SQL code below for Question 5
+-- alter table customer
+rename city to location;
 ```
 
 **Output:**
 
-![Output5](output.png)
+![image](https://github.com/user-attachments/assets/406cd0ee-a1d2-43cb-ad20-312793d1582b)
+
 
 **Question 6**
 ---
--- Paste Question 6 here
+-- Create a table named Products with the following constraints:
+ProductID as INTEGER should be the primary key.
+ProductName as TEXT should be unique and not NULL.
+Price as REAL should be greater than 0.
+StockQuantity as INTEGER should be non-negative.
 
 ```sql
--- Paste your SQL code below for Question 6
+-- create table Products(
+ProductID integer primary key,
+ProductName text unique not null,
+Price REAL check(Price>0),
+StockQuantity Integer check(StockQuantity>0));
 ```
 
 **Output:**
 
-![Output6](output.png)
+![image](https://github.com/user-attachments/assets/bb0ec5c3-a35b-4789-bbbd-07d98deed48b)
+
 
 **Question 7**
 ---
--- Paste Question 7 here
+-- Create a new table named item with the following specifications and constraints:
+item_id as TEXT and as primary key.
+item_desc as TEXT.
+rate as INTEGER.
+icom_id as TEXT with a length of 4.
+icom_id is a foreign key referencing com_id in the company table.
+The foreign key should cascade updates and deletes.
+item_desc and rate should not accept NULL.
 
 ```sql
--- Paste your SQL code below for Question 7
+-- Pcreate table item(
+item_id text primary key,
+item_desc text not null,
+rate integer not null,
+icom_id text(4),
+foreign key (icom_id) references company(com_id)
+on update cascade
+on delete cascade);
 ```
 
 **Output:**
 
-![Output7](output.png)
+![image](https://github.com/user-attachments/assets/e1af43c6-c39d-4bce-ab0a-9be2abae032e)
+
 
 **Question 8**
 ---
--- Paste Question 8 here
+-- Insert a record with EmployeeID 001, Name Sarah Parker, Position Manager, Department HR, and Salary 60000 into the Employee table.
 
 ```sql
--- Paste your SQL code below for Question 8
+-- insert into Employee
+values(001,'Sarah Parker','Manager','HR',60000);
 ```
 
 **Output:**
 
-![Output8](output.png)
+![image](https://github.com/user-attachments/assets/896079b3-1992-411c-a571-49ce0734adc6)
+
 
 **Question 9**
 ---
--- Paste Question 9 here
+-- Write a SQL query to Add a new column named "discount" with the data type DECIMAL(5,2) to the "customer" table.
+
+Sample table: customer
+
+ customer_id |   cust_name    |    city    | grade | salesman_id 
+-------------+----------------+------------+-------+-------------
+        3002 | Nick Rimando   | New York   |   100 |        5001
+        3007 | Brad Davis     | New York   |   200 |        5001
+        3005 | Graham Zusi    | California |   200 |        5002
 
 ```sql
--- Paste your SQL code below for Question 9
+-- alter table customer
+add column discount DECIMAL(5,2);
 ```
 
 **Output:**
 
-![Output9](output.png)
+![image](https://github.com/user-attachments/assets/ffc8bf2f-80ba-4b81-8e7d-d26f5c7c0263)
+
 
 **Question 10**
 ---
--- Paste Question 10 here
+-- Create a table named Tasks with the following columns:
+TaskID as INTEGER
+TaskName as TEXT
+DueDate as DATE
 
 ```sql
--- Paste your SQL code below for Question 10
+-- create table Tasks(
+TaskID INTEGER,
+TaskName TEXT,
+DueDate DATE);
 ```
 
 **Output:**
 
-![Output10](output.png)
+![image](https://github.com/user-attachments/assets/abd98bcc-a396-4ae7-8455-0c88b8937eca)
+
 
 
 ## RESULT
