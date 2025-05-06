@@ -105,15 +105,18 @@ CREATE TABLE Table_Name (
 
 **Question 1**
 --
--- Paste Question 1 here
+-- Insert all products from Discontinued_products into Products.
+Table attributes are ProductID, ProductName, Price, Stock
 
 ```sql
--- Paste your SQL code below for Question 1
+-- insert into Products(ProductID,ProductName,Price,Stock) 
+select * from Discontinued_products;
 ```
 
 **Output:**
 
-![Output1](output.png)
+![image](https://github.com/user-attachments/assets/dcd0cea9-3c5f-4374-b04d-528eae4a73c1)
+
 
 **Question 2**
 ---
