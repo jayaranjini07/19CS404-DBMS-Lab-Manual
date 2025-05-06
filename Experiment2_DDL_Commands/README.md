@@ -109,7 +109,7 @@ CREATE TABLE Table_Name (
 Table attributes are ProductID, ProductName, Price, Stock
 
 ```sql
--- insert into Products(ProductID,ProductName,Price,Stock) 
+insert into Products(ProductID,ProductName,Price,Stock) 
 select * from Discontinued_products;
 ```
 
@@ -126,7 +126,7 @@ MemberName as TEXT
 JoinDate as DATE
 
 ```sql
--- create table Members(
+ create table Members(
 MemberID INTEGER,
 MemberName TEXT,
 JoinDate DATE);
@@ -146,7 +146,7 @@ SupplierID as INTEGER should be a foreign key referencing Suppliers(SupplierID).
 OrderID as INTEGER should be a foreign key referencing Orders(OrderID).
 
 ```sql
--- Create table Shipments(
+ Create table Shipments(
 ShipmentID INTEGER primary key,
 ShipmentDate DATE,
 SupplierID INTEGER,
@@ -169,7 +169,7 @@ RollNo      Name        Gender      Subject     MARKS
 203            James Bond   M          Literature    78
 
 ```sql
--- insert into Student_details(RollNo,Name,Gender,Subject,MARKS)
+ insert into Student_details(RollNo,Name,Gender,Subject,MARKS)
 values(202,'Ella King','F','Chemistry',87),
 (203,'James Bond','M','Literature',78);
 ```
@@ -191,7 +191,7 @@ Sample table: customer
         3005 | Graham Zusi    | California |   200 |        5002
 
 ```sql
--- alter table customer
+alter table customer
 rename city to location;
 ```
 
@@ -209,7 +209,7 @@ Price as REAL should be greater than 0.
 StockQuantity as INTEGER should be non-negative.
 
 ```sql
--- create table Products(
+create table Products(
 ProductID integer primary key,
 ProductName text unique not null,
 Price REAL check(Price>0),
@@ -233,7 +233,7 @@ The foreign key should cascade updates and deletes.
 item_desc and rate should not accept NULL.
 
 ```sql
--- Pcreate table item(
+Pcreate table item(
 item_id text primary key,
 item_desc text not null,
 rate integer not null,
@@ -253,7 +253,7 @@ on delete cascade);
 -- Insert a record with EmployeeID 001, Name Sarah Parker, Position Manager, Department HR, and Salary 60000 into the Employee table.
 
 ```sql
--- insert into Employee
+insert into Employee
 values(001,'Sarah Parker','Manager','HR',60000);
 ```
 
@@ -275,7 +275,7 @@ Sample table: customer
         3005 | Graham Zusi    | California |   200 |        5002
 
 ```sql
--- alter table customer
+alter table customer
 add column discount DECIMAL(5,2);
 ```
 
@@ -292,7 +292,7 @@ TaskName as TEXT
 DueDate as DATE
 
 ```sql
--- create table Tasks(
+create table Tasks(
 TaskID INTEGER,
 TaskName TEXT,
 DueDate DATE);
