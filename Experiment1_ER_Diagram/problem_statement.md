@@ -62,8 +62,17 @@
  ...
  
  ## Relationships and Constraints:
- - Relationship1 (Cardinality, Participation)
- - Relationship2 (Cardinality, Participation)
+| Relationship                         | Cardinality     | Participation         |
+|--------------------------------------|------------------|------------------------|
+| Patient – Appointment                | One-to-Many      | Partial – Total        |
+| Doctor – Appointment                 | One-to-Many      | Partial – Total        |
+| Patient – Medical Record             | One-to-Many      | Partial – Total        |
+| Doctor – Medical Record              | One-to-Many      | Partial – Partial      |
+| Appointment – Billing                | One-to-One       | Total – Total          |
+| Billing – Payment                    | One-to-Many      | Partial – Total        |
+| Doctor – Department                  | Many-to-One      | Total – Partial        |
+| Department – Doctor (Dept Head)      | One-to-One       | Partial – Partial      |
+
  ...
  
  ## Extension (Prerequisite / Billing):
