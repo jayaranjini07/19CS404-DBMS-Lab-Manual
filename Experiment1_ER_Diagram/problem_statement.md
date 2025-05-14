@@ -72,7 +72,7 @@
 | Doctor – Department                  | Many-to-One      | Total – Partial        |
 | Department – Doctor (Dept Head)      | One-to-One       | Partial – Partial      |
 
- ...
+
  
  ## Extension (Prerequisite / Billing):
  The **Billing** entity is linked to both **Appointment** and **Patient**. Each appointment generates exactly one bill. The **Payment** entity supports **multiple payments per bill** (e.g., partial payments). This is modeled using a one-to-many relationship between **Billing** and **Payment**. Each payment records method, date, and amount—ensuring accurate tracking of all financial transactions.
