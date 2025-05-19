@@ -354,7 +354,7 @@ WHERE city = 'Paris'
 
 **Grade:**
 
-![image](https://github.com/user-attachments/assets/173df338-058e-4bda-a3b4-36ea3369bd89)
+![image](https://github.com/user-attachments/assets/fd53902a-752f-480d-8c38-fd5987324553)
 
 ## RESULT
 Thus, the SQL queries to implement subqueries and views have been executed successfully.
