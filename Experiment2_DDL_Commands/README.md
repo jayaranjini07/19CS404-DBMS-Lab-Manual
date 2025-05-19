@@ -302,7 +302,9 @@ DueDate DATE);
 
 ![image](https://github.com/user-attachments/assets/abd98bcc-a396-4ae7-8455-0c88b8937eca)
 
+**Grade:**
 
+![Screenshot 2025-05-19 132830](https://github.com/user-attachments/assets/424e2217-4184-48af-9e0e-d27281e00afa)
 
 ## RESULT
 Thus, the SQL queries to implement different types of constraints and DDL commands have been executed successfully.
