@@ -46,7 +46,7 @@ Used to retrieve records from a table.
 SELECT column1, column2 FROM table_name WHERE condition;
 ```
 
-*Question 1*
+**Question 1**
 --
 ```
 Write a SQL statement to Increase the selling price by 15% in the products table where quantity in stock is less than 50 and supplier ID is 10.
@@ -78,11 +78,12 @@ set sell_price=sell_price*1.15
 where quantity <50 and
 supplier_id =10;
 ```
-*Output:*
 
+**Output:**
 ![Screenshot (219)(1)](https://github.com/user-attachments/assets/ea2daf48-c7c8-4587-b7b2-4acb6ae2b9a3)
 
-*Question 2*
+
+**Question 2**
 ---
 ```
 Write a SQL statement to update the product_name as 'Grapefruit' whose product_id is 4 in the products table.
@@ -101,12 +102,12 @@ update products
 set product_name='Grapefruit'
 where product_id =4;
 ```
-*Output:*
 
+**Output:**
 ![Screenshot (220)(1)](https://github.com/user-attachments/assets/70e9f398-fe6f-4790-a6e8-579e7afbc95a)
 
 
-*Question 3*
+**Question 3**
 ---
 ```
 For  Increase the selling price per unit by 3 for all products supplied by supplier ID 4 in the sales table.
@@ -149,12 +150,11 @@ where product_id in (select product_id from products
 where supplier_id=4);
 ```
 
-*Output:*
-
+**Output:**
 ![Screenshot (221)(1)](https://github.com/user-attachments/assets/d33e294d-51d4-43a1-9b00-03ab1494ce31)
 
 
-*Question 4*
+**Question 4**
 ---
 ```
 Write a SQL statement to Update the grade of all customers in Chennai city as  5. 
@@ -168,12 +168,12 @@ set grade=5
 where city='Chennai';
 ```
 
-*Output:*
-
+**Output:**
 ![Screenshot (222)(1)](https://github.com/user-attachments/assets/9f6f0708-60c6-45df-90b0-a6bf9452c548)
 
 
-*Question 5*
+**Question 5**
+---
 ```
 Update the total selling price to quantity sold multiplied by updated selling price per unit where product id is 10 in the sales table.
 
@@ -200,10 +200,12 @@ update sales
 set total_sell_price=sell_price*quantity
 where product_id=10;
 ```
-*Output:*
+
+**Output:**
 ![Screenshot (223)(1)](https://github.com/user-attachments/assets/e1f98b9d-1c58-45bf-9ef4-1014a2d4b5ce)
 
-*Question 6*
+
+**Question 6**
 ---
 ```
 Write a SQL query to find all those customers who does not have any grade. Return customer_id, cust_name, city, grade, salesman_id.
@@ -231,11 +233,11 @@ from customer
 where grade is null;
 ```
 
-*Output:*
+**Output:**
 ![Screenshot (226)(1)](https://github.com/user-attachments/assets/4695bf02-3dcb-4dcf-87bb-46339ceab3d8)
 
 
-*Question 7*
+**Question 7**
 ---
 ```
 Write a SQL query to Delete All Doctors with a NULL Last Name
@@ -266,12 +268,11 @@ delete from doctors
 where last_name is null;
 ```
 
-*Output:*
-
+**Output:**
 ![Screenshot (224)(1)](https://github.com/user-attachments/assets/86932326-4a4b-42ae-a3b5-00438adf82ed)
 
 
-*Question 8*
+**Question 8**
 ---
 ```
 Write a SQL query to Delete a Specific Surgery whose ID is 3
@@ -299,11 +300,11 @@ delete from surgeries
 where surgery_id=3;
 ```
 
-*Output:*
-
+**Output:**
 ![Screenshot (225)(1)](https://github.com/user-attachments/assets/4f1e5ef4-eb06-47ed-9ddb-db788e49ccd5)
 
-*Question 9*
+
+**Question 9**
 ---
 ```
 Write a SQL query to Delete all Doctors whose Specialization is either 'Pediatrics' or 'Cardiology' and Last Name is Brown.
@@ -317,11 +318,11 @@ WHERE specialization IN ('Pediatrics','Cardiology')
 AND last_name = 'Brown';
 ```
 
-*Output:*
-
+**Output:**
 ![image](https://github.com/user-attachments/assets/1e39da2b-7c39-4ec5-81a5-16ca8ae1dc61)
 
-*Question 10*
+
+**Question 10**
 ---
 ```
 Write a SQL query to Delete customers with 'GRADE' 2 and 'CUST_NAME' starting with 'M', and whose 'PAYMENT_AMT' is less than 3000
@@ -341,9 +342,11 @@ WHERE CUST_NAME LIKE 'M%'
 AND PAYMENT_AMT < 3000;
 ```
 
-*Output:*
-
+**Output:**
 ![image](https://github.com/user-attachments/assets/44ecc6fe-d922-4951-b39a-205a7078663a)
+
+**Grade:**
+![image](https://github.com/user-attachments/assets/e5e64911-f00f-4de5-b0b7-02344dff06a0)
 
 ## RESULT
 Thus, the SQL queries to implement DML commands have been executed successfully.
