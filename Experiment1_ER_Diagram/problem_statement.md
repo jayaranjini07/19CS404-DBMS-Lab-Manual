@@ -47,8 +47,8 @@
  Hospital 
  
  ## ER Diagram:
- ![image](https://github.com/user-attachments/assets/e37329bf-0b46-4fc6-917f-01839cb80a21)
- 
+![image](https://github.com/user-attachments/assets/61af38c6-451d-4c0f-93ab-a224a858d60d)
+
  ## Entities and Attributes:
  - Entity1: Attributes
  - Entity2: Attributes
